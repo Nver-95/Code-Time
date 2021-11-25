@@ -1,0 +1,1132 @@
+@font-face { 
+    font-family: "GilroyThin";
+    src: url("../fonts/GilroyThin/GilroyThin.eot");
+    src: url("../fonts/GilroyThin/GilroyThin.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GilroyThin/GilroyThin.woff") format("woff"),
+    url("../fonts/GilroyThin/GilroyThin.ttf") format("truetype");
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,p,span {
+    font-family: GilroyThin, sans-serif;
+}
+//The beginning of my class - header
+.header {
+    width: 100%;
+    background: #F8FFFF;
+    .header_content {
+        max-width: 1440px;
+        margin: 0 auto;
+        background-color: #F8FFFF;
+        .navbar_content {
+            max-width: 1114px;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            padding:32px 20px 55px;
+            .content_logo {
+                @media (max-width:992px) {
+                margin: auto;
+              }
+            }
+            .content_contact {
+                display: flex;
+                align-items: center;
+                margin: 0 0 0 240px;
+                @media (max-width:992px) {
+                    display: none;
+                }
+                    .message {
+                        padding: 0 66px 0 61px;
+                    }
+                    .contact a {
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        span {
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 20px;
+                            white-space: nowrap;
+                            padding: 0 0 0 16px;
+                            color: #1E959B;
+                            @media (max-width:1150px) {
+                                display: none;
+                            }
+                        }
+                    }
+                    .content_button {
+                        margin:0 0 0 58px;
+                      .btn_project_started {
+                        min-width: 186px;
+                        min-height: 62px;
+                        border-radius: 15px;
+                        background: #F05670;
+                        span {
+                            font-size: 14px;
+                            font-weight: 700;
+                            line-height: 17px;
+                            letter-spacing: 1px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Completing my class - header
+.main {
+    background: #F8FFFF;
+}
+//The beginning of my class - container_it_product
+    .container_it_product {
+        max-width: 1440px;
+        margin: 0 auto;
+        .it_product_content {
+            max-width: 1055px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            @media (min-width:992px) {
+                align-items: center;
+            }
+            @media (max-width:992px) {
+                flex-direction: column;
+            }
+            .left_side_content {
+                flex: 0 1 322px;
+                z-index: 1;
+                @media (max-width:992px) {
+                    margin: auto;
+                }
+                h1 {
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    text-transform: uppercase;
+                    color: #1E959B;
+                    @media (max-width:992px) {
+                        text-align: center;
+                    }
+                }
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    padding: 16px 0 50px 0;
+                    color: #3C3C3C;
+                }
+                .it_product_button {
+                    @media (max-width:992px) {
+                        display: flex;
+                        justify-content: center;
+                        position: relative;
+                        top: 175px;
+                    }
+                .btn_product {
+                    min-width: 232px;
+                    min-height: 70px;
+                    background: #F05670;
+                    box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+                    border-radius: 20px;
+
+                    span {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #FFFFFF;
+                    }
+                  }
+               }
+            }
+            .right_side_content {
+                flex: 0 1 620px;
+                min-height: 509px;
+                background: url(../images/png/group.png) no-repeat;
+                background-size: cover;
+                @media (max-width:992px) {
+                    flex: 1 0 auto;
+                    background-position: 80% 50%;
+                    position: relative;
+                    bottom: 170px;
+                }
+                @media (max-width: 576px) {
+                    background-position: 80% 50%;
+                }
+            }
+        }
+    }
+// Completing my class - container_it_product
+//The beginning of my class - it_product_advertising 
+.it_product_advertising {
+    width: 100%;
+    margin: 54px auto 120px;
+    position: relative;
+    background:#1E959B;
+    @media (max-width:992px) {
+        margin: 0 auto;
+    }
+    @media (max-width:650px) {
+        margin: -42% auto 0;
+    }
+    @media (max-width:420px) {
+        margin: -67% auto 0;
+    }
+    .container_advertising {
+        max-width: 1440px;
+        margin: 0 auto;
+        .product_advertising {
+            max-width: 1167px;
+            margin: 0 auto;
+            padding: 17px 0;
+            @media (max-width:1280px) {
+                display: none;
+            }
+        }
+//The beginning of my class - slideshow_container
+        .slideshow_container {
+            max-width: 1000px;
+            height: 95px;
+            margin: 0 auto;
+            padding: 17px 36px;
+            position: relative;
+            display: none;
+            @media (max-width:1280px) {
+                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .mySlides {
+                img {
+                    flex: 0 1 200px;
+                }
+            }
+            .prev {
+                position: absolute;
+                left:16px
+            }
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px 32px 16px 16px;
+                margin-top: -29px;
+                color:#C4C4C4;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+             &:hover {
+               color: white;
+            }
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+        @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+      }
+    }
+// Completing my class - slideshow_container
+}
+// Completing my class - it_product_advertising 
+//The beginning of my class - service_product_fit
+.service_product_fit {
+    width: 100%;
+    .container_service {
+        max-width: 1440px;
+        margin: 120px auto 33px;
+        @media (max-width: 420px) {
+            margin: 90px auto 0;
+        }
+        .service_content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            @media (max-width: 670px) {
+                flex-direction: column;
+            }
+               @media (max-width: 420px) {
+                    display: none;
+                }
+            .service {
+                flex: 0 1 195px;
+                display: flex;
+                flex-direction: column;
+                margin:0 24px;
+                background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FD 100%);
+                box-shadow: 0px 4px 4px rgba(30, 149, 155, 0.5);
+                border-radius: 25px;
+                @media (max-width: 1220px) {
+                    margin: 12px;
+                }
+                @media (max-width: 670px) {
+                    width: 80%;
+                    margin: 12px auto;
+                }
+                img {
+                    width: 80px;
+                    margin: auto;
+                    padding: 28px 0 0 0;
+                    @media (max-width: 670px) {
+                        width: 100px;
+                    }
+                }
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17px;
+                    padding: 22px 14px 19px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                    color: #3C3C3C;
+                }
+            }
+            .active {
+                background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FD 100%);
+                box-shadow: inset 0px 4px 4px rgba(30, 149, 155, 0.5);
+                border-radius: 25px;
+            }
+        }
+//The beginning of my class - slideshow_container_service
+        .slideshow_container_service {
+            max-width: 1000px;
+            height: 95px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            display: none;
+            @media (max-width:420px) {
+                display: block;
+            }
+            .mySlid {
+                  width: 195px;
+                  position: absolute;
+                  left:27%;
+                .service {
+                    max-width: 195px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FD 100%);
+                    box-shadow: inset 0px 4px 4px rgba(30, 149, 155, 0.5);
+                    border-radius: 25px;
+                    img {
+                        width: 80px;
+                        height: 80px;
+                        margin: auto;
+                        padding: 18px 0 21px 0;
+                    }
+                    span {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 17px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        white-space: nowrap;
+                        color: #3C3C3C;
+                        padding: 0 0 19px 0;
+                    }
+                }
+            }
+            .prevs {
+                position: absolute;
+                left:16px
+            }
+        .prevs, .nexts {
+            cursor: pointer;
+            position: absolute;
+            top: 29%;
+            width: auto;
+            padding: 16px 32px 16px 16px;
+            color:#C4C4C4;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+             &:hover {
+               color:  #1E959B;
+            }
+        }
+        .nexts {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .dots {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+    .actives, .dots:hover {
+        background-color: #1E959B;
+        
+    }
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+        @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+      }
+// Completing my class - slideshow_container_service
+   }
+}
+// Completing my class - service_product_fit
+// The beginning of my class - interview_content
+.interview_content {
+    width: 100%;
+    .container_interview {
+        max-width: 1440px;
+        margin: 33px auto 139px;
+        @media (max-width:576px) {
+            margin: 33px auto 0;
+        }
+        .interview {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 0 10px;
+            @media (max-width:1050px) {
+                flex-direction: column;
+            }
+            @media (max-width:576px) {
+                flex-direction: column-reverse;
+            }
+            @media (max-width:420px) {
+                padding: 33px 0 0 0;
+            }
+         .left_side_content {
+             flex: 0 1 606px;
+             height: 508px;
+             margin: 0 105px 0 0;
+             position: relative;
+             padding: 0 19px;
+             background: url(../images/png/interwiev.png) no-repeat;
+             background-size: contain;
+             @media (max-width:1150px) {
+                 margin: 0 20px 0 0;
+             }
+             @media (max-width:1050px) {
+                margin: auto;
+                width: 80%;
+            }
+            @media (max-width:768px) {
+                margin: auto;
+                width: 100%;
+            }
+            @media (max-width:576px) and (min-width:420px) {
+                margin: 15px auto 0;
+            }
+            @media (max-width:420px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .context_buttons {
+                display: none;
+                @media (max-width:420px) {
+                    display: block;
+                    position: absolute;
+                    margin: 170px 0 0 0;
+                }
+                .btn_interwiev {
+                    min-width: 257px;
+                    min-height: 70px;
+                    box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+                    border-radius: 20px;
+                    background: #F05670;
+                    span {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                  }
+               }
+            }  
+         }
+         .right_side_content {
+             flex: 0 1 auto;
+             @media (max-width:1050px) {
+                width: 100%;
+                margin: auto;
+            }
+            h2 {
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 40px;
+                text-transform: uppercase;
+                color: #1E959B;
+                @media (max-width:1050px) {
+                    text-align: center;
+                }
+                @media (max-width:420px) {
+                   padding: 0 20px;
+                   font-size: 29px;
+                }
+            }
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                padding: 27px 0 44px 0;
+                color: #3C3C3C;
+                @media (max-width:1050px) {
+                    text-align: center;
+                }
+                @media (max-width:576px) {
+                    text-align: left;
+                    padding: 12px 0 20px;
+                }
+                @media (max-width:420px) {
+                    padding: 27px 0 0 27px;
+                 }
+                span {
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 16px;
+                    color: #3C3C3C;
+                }
+            }
+            .context_button {
+                @media (max-width:1050px) {
+                    display: flex;
+                    justify-content: center;
+                }
+                @media (max-width:420px) {
+                    display: none;
+                }
+                .btn_interwiev {
+                    min-width: 257px;
+                    min-height: 70px;
+                    background: #F05670;
+                    box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+                    border-radius: 20px;
+                    span {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                  }
+               }
+            }             
+         }
+      }
+   }
+}
+// Completing my class - interview_content
+// The beginning of my class - lorem_ipsum
+.lorem_ipsum {
+    width: 100%;
+    margin: 51px 0 163px 0;
+    background: url(../images/jpg/lorem.jpg);
+    background: #F8FFFF;
+    mix-blend-mode: multiply;
+    @media (max-width:576px) {
+        margin: -20% 0 120px 0;
+    }
+    @media (max-width:420px) {
+        margin: -20% 0 94px 0;
+    }
+    .container_lorem {
+        max-width: 1440px;
+        margin: 0 auto;
+        position: relative;
+        .content_lorem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 10px;
+            @media (max-width:992px) {
+                flex-direction: column;
+            }
+        .left_side_lorem {
+            flex: 0 1 auto;
+            margin: 0 84px 0 0;
+            @media (max-width:1250px) {
+                margin: 0 30px 0 0;
+            }
+            @media (max-width:992px) {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin:50px 0;
+                }
+            .context_lorem {
+                @media (max-width:992px) {
+                    text-align: center;
+                }
+                span {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    text-transform: uppercase;
+                    color: #F05670;
+                }
+                p {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 40px;
+                    text-transform: uppercase;
+                    color: #1E959B;
+                    @media (max-width:1250px) {
+                         font-size: 23px;
+                    }
+                    @media (max-width:576px) {
+                            font-size: 18px;
+                    }
+                  }
+               }
+            }
+            .right_side_lorem {
+                flex: 0 1 469px;
+                min-height: 390px;
+                margin: 30px 0;
+                background: url(../images/png/Character.png) no-repeat;
+                background-size: contain;
+                @media (max-width:992px) {
+                    width: 60%;
+                    margin:auto;
+                }
+                @media (max-width:768px) {
+                    width: 75%;
+                }
+                @media (max-width:420px) {
+                    max-height: 300px;
+                }
+            }
+        }
+        .elips_content {
+            min-width: 98px;
+            min-height: 68px;
+            position: absolute;
+            top: 0;
+            left: 123px;
+            z-index: -1;
+            background: url(../images/svg/ellipse_content.svg);
+        }
+        .elips_content_two {
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+            min-width: 41px;
+            min-height: 87px;
+            z-index: -1;
+            background: #1E959B;
+            background: url(../images/svg/ellipse_content_2.svg);
+        }
+        .elips_content_three {
+            position: absolute;
+            right: 508px;
+            bottom: 0;
+            min-width: 174px;
+            min-height: 87px;
+            z-index: -1;
+            background: #1E959B;
+            background: url(../images/svg/ellipse_content_3.svg);
+        }
+        .elips_content_four {
+            position: absolute;
+            right: 0;
+            top: 0;
+            min-width: 41px;
+            min-height: 59px;
+            z-index: -1;
+            background: #1E959B;
+            background: url(../images/png/ellipse_content_4.png);
+        }
+    }
+}
+// Completing my class - lorem_ipsum
+// The beginning of my class - annexes_content
+.annexes_content {
+    width: 100%;
+    .annexes_container {
+        max-width: 1440px;
+        margin: 0 auto;
+        .annexes {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            padding: 0 67px;
+            flex-direction: column;
+            @media (max-width:1400px) {
+                padding: 0 12px;
+            }
+        .top_side_annexes, .bottom_side_annexes {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 992px) {
+                width: 50%;
+                margin: auto;
+                flex-direction: column;
+                padding: 0 10px;
+            }
+            @media (max-width: 768px) {
+                width: 75%;
+            }
+            @media (max-width: 420px) {
+                display: none;
+            }
+            .annexes_card {
+                flex: 0 1 289px;
+                margin: 0 0 83px 0;
+                background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FD 100%);
+                box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+                border-radius: 30px;
+                z-index: 2;
+                @media (max-width:1250px) {
+                    flex: 0 1 230px;
+                }
+                .card_images {
+                    width: 182px;
+                    height: 182px;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transform: translateY(-43px);
+                    background:url(../images/svg/Vector_annexes.svg);
+                    background-size: contain;
+                }
+                .card_text {
+                    display: flex;
+                    justify-content: center;
+                    margin: -9px 0 0 0;
+                    padding: 0px 0 27px 0;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    color: #1E959B;
+                    @media (max-width:1250px) and (min-width:992px) {
+                        font-size: 22px;
+                    }
+                }
+                .text_mobile {
+                    text-align: center;
+                    transform: translateY(-15px);
+                }
+                .card_button {
+                    display: flex;
+                    justify-content: center;
+                    margin: 0 0 20px 0;
+                .btn_card {
+                    min-width: 206px;
+                    min-height: 62px;
+                    background: #F05670;
+                    box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+                    border-radius: 20px;
+                    span {
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 17px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                      }
+                    }
+                    .btn_mobile {
+                        transform: translateY(-30px);
+                  }
+                }
+              }
+           }
+    //  The beginning of my class - slideshow_slid_annexes
+        .slideshow_slid_annexes {
+            max-width: 248px;
+            margin: 0 auto;
+            position: relative;
+            display: none;
+            @media (max-width:420px) {
+                display: block;
+                justify-content: center;
+            }
+            .mySlid_annexes {
+                width: 248px;
+                margin: 0 auto;
+                background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FD 100%);
+                box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+                border-radius: 30px;
+                z-index: 2;
+                .card_images {
+                    width: 170px;
+                    height: 170px;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transform: translateY(-43px);
+                    background:url(../images/svg/Vector_annexes.svg);
+                    background-size: contain;
+                }
+                .card_text {
+                    display: flex;
+                    justify-content: center;
+                    margin: -9px 0 0 0;
+                    padding: 0px 0 27px 0;
+                    font-size: 21px;   
+                    font-weight: 700;
+                    line-height: 30px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #1E959B;
+                }
+                .text_mobile {
+                    padding: 0;
+                    margin: -6px;
+                }
+                .card_button {
+                    display: flex;
+                    justify-content: center;
+                    
+                    .btn_card {
+                        min-width: 206px;
+                        min-height: 62px;
+                        background: #F05670;
+                        box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+                        border-radius: 20px;
+                        margin: 35px 0 21px 0;
+                    span {
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 17px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        }
+                      }
+                    }    
+                .prev_annexes {
+                    position: absolute;
+                    bottom: 45px;
+                    right: 26px;
+                }
+                .prev_annexes, .next_annexes {
+                    cursor: pointer;
+                    color:#f8ffff;
+                    font-weight: bold;
+                    font-size: 18px;
+                    padding: 0 100px;
+                    transition: 0.6s ease;
+                    border-radius: 0 3px 3px 0;
+                    user-select: none;
+                    &:hover {
+                        color:  #1E959B;
+                    }
+                }
+        .next_annexes {
+            border-radius: 3px 0 0 3px;
+        }
+        .dot_annexes {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active_annexes, .dot_annexes:hover {
+            background-color: #1E959B;
+        
+        }
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+         }
+       }
+// Completing my class - slideshow_slid_annexes
+      }
+    }
+  }
+}
+// Completing my class - annexes_content
+// The beginning of my class - content_applications
+.content_applications {
+    width: 100%;
+    margin: 37px 0 84px 0;
+    @media (max-width:800px) {
+        margin: 7px 0 0 0;
+    }
+    @media (max-width:800px) {
+        margin: 120px 0 0 0;
+    }
+    .container_applications {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 15px;
+        .applications {
+            max-width: 765px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (min-width:992px) {
+                position: relative;
+                left: -20px;
+            }
+            @media (max-width:800px) {
+                display: block;
+                width: 50%;
+                margin: auto;
+                flex-direction: column;
+            }
+            @media (max-width:576px) {
+                width: 60%;
+            }
+            .left_side_application {
+                display: block;
+                flex: 0 1 322px;
+                min-height: 315px;
+                margin: 0 113px 0 0;
+                background: url(../images/png/application.png) no-repeat;
+                background-size: contain;
+                background-position: 20px;
+                @media (max-width:800px) {
+                    display: block;
+                    margin: 0 0 53px 0;
+                }
+            }
+            .right_side_application { 
+                .btn_leave_a_request {
+                    min-width: 329px;
+                    min-height: 99px;
+                    background: #F05670;
+                    box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+                    border-radius: 20px;
+                    @media (max-width:576px) {
+                        min-width: 270px;
+                        min-height: 80px;
+                    }
+                    span {
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 30px;
+                        color: #FFFFFF;
+                        @media (max-width:576px) {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Completing my class - content_applications 
+// The beginning of my class - footer
+.footer {
+    width: 100%;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FD 100%), #C4C4C4;
+    @media (max-width:800px) {
+        margin: 90px 0 0 0;
+    }
+    .footer_container {
+        max-width: 1440px;
+        margin: 0 auto;
+        .footer-content {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 0 10px;
+            .left-side_footer {
+                display: flex;
+                align-items: center;
+                .content_logo {
+                    margin: 0 40px 0 0;
+                    @media (max-width:576px) {
+                        display: none;
+                    }
+                }
+                .text_left_side {
+                    display: flex;
+                    flex-direction: column;
+                    @media (max-width:576px) {
+                        flex-direction: row;
+                    }
+                    span {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 19px;
+                        color: #1E959B;
+                        padding: 11px 0;
+                        white-space: nowrap;
+                        @media (max-width:576px) {
+                            padding: 0 38px;
+                        }
+                    }
+                    .mobile_text {
+                        @media (max-width:576px) {
+                            display: none;
+                        }
+                    .active_mobiles {
+                        display: none;
+                        @media (max-width:576px) {
+                            display: block;
+                        }
+                     }    
+                  }
+               }
+            }
+            .center-side_footer {
+                display: flex;
+                flex-direction: column;
+                margin: 0 45px 0;
+                .top_center_side {
+                    margin: 0 0 15px 0;
+                    @media (max-width:576px) {
+                        display: flex;
+                        justify-content: center;
+                        margin: 35px 0;
+                    }
+                }
+                .top_center_side, .bottom_center_side {
+                    span {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #1E959B;
+                    }
+                }
+                .bottom_center_side {
+                    display: flex;
+                    .contact {
+                        display: flex;
+                        a {
+                            text-decoration: none;
+                            span {
+                                position: relative;
+                                bottom: 13px;
+                                font-size: 14px;
+                                left: 16px;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                    .icon_contact_up {
+                        padding: 0 26px 0 40px;
+                    }
+                    .icon_contact_up, .message {
+                        position: relative;
+                        bottom: 20px;
+                        @media (max-width: 576px) {
+                            top: 5px;
+                            left: 35px;
+                        }
+                    }
+                }
+            }
+            .right_side_footer {
+                display: flex;
+                align-items: center;
+                @media (max-width: 1265px) {
+                    padding: 34px 0 0 0;
+                }
+                p {
+                    max-width: 290px;
+                    padding: 0 0 0 20px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #3C3C3C;
+                    @media (max-width: 1265px) {
+                        max-width: 450px;
+                    }
+                    @media (max-width: 576px) {
+                        font-size: 12px;
+                        max-width: 251px;
+                    }
+                }
+            }
+            .boottom_side_footer {
+                margin: 5px 0 38px 0;
+                @media (max-width: 1265px) {
+                    margin: 5px 0 38px 50px;
+                }
+                @media (max-width: 576px) {
+                    margin: 40px 0 40px 0;
+                   
+                }
+                span {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: rgba(60, 60, 60, 0.5);
+                }
+            }
+        }
+    }
+}
+// Completing my class - footer 
